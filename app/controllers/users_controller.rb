@@ -25,7 +25,6 @@ class UsersController < ApplicationController
   # GET /users/new.json
   def new
     @user = User.new
-User.create params[:user]
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @user }
@@ -41,7 +40,6 @@ User.create params[:user]
   # POST /users.json
   def create
     @user = User.new(params[:user])
-    User.create params[:user]
 
     respond_to do |format|
       if @user.save

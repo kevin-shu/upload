@@ -9,6 +9,7 @@ gem 'carrierwave'
 
 gem 'sqlite3'
 
+gem 'psych'
 
 # Gems used only for assets and not required
 # in production environments by default.
